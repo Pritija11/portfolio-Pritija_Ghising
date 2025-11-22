@@ -4,11 +4,12 @@
 <head>
 	<title>Portfolio</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 	<header>
 		<nav>
-		<h3>Pritija</h3>
+		<h2>Pritija</h2>
 		<ul>
 			<li><a>About</a></li>
 			<li><a>Projects</a></li>
@@ -16,28 +17,64 @@
 		</ul>
 		</nav>
 	</header>
-	<section>
-		<h3>About me</h3>
-		<p>I am Pritija Ghising. I am from Ilam but staying here in Lalitpur. I am pursuing my degree in Computer Science. I study in Herald College Kathmandu. Apart from that, I am currently learrning Full Stack Development.I am Pritija Ghising. I am from Ilam but staying here in Lalitpur. I am pursuing my degree in Computer Science. I study in Herald College Kathmandu. Apart from that, I am currently learrning Full Stack Development.</p>
+	<section class="about">
+		<h2>About me</h2>
+		<p>I am Pritija Ghising. I am from Ilam but staying here in Lalitpur. I am pursuing my degree in Computer Science. I study in Herald College Kathmandu. Apart from that, I am currently learrning Full Stack Development.I am Pritija Ghising. I am from Ilam but staying here in Lalitpur. I am pursuing my degree in Computer Science. I study in Herald College Kathmandu. Apart from that, I am currently learrning Full Stack Development.I am Pritija Ghising. I am from Ilam but staying here in Lalitpur. I am pursuing my degree in Computer Science. I study in Herald College Kathmandu. Apart from that, I am currently learrning Full Stack Development.I am Pritija Ghising. I am from Ilam but staying here in Lalitpur. I am pursuing my degree in Computer Science. I study in Herald College Kathmandu. Apart from that, I am currently learrning Full Stack Development. </p>
 
 		<div class="Projects">
-			<h3>My Projects</h3>
-			<div class="box">
-			<div id="box1">Project1</div>
-			<div id="box2">Project2</div>
-		</div>
-		</div>
+    <h3>My Projects</h3>
+    <div class="box">
+
+        <div class="project">
+            <div id="box1">
+            	<img src="images/project.png" alt="Portfolio project">
+            </div>
+            <p>A simple personal portfolio page built with HTML and CSS, showing my bio, projects, and contact form.</p>
+        </div>
+
+        <div class="project">
+            <div id="box2"><img src="images/project.png" alt="Portfolio project"></div>
+            <p>A simple personal portfolio page built with HTML and CSS, showing my bio, projects, and contact form.</p>
+        </div>
+
+    </div>
+</div>
 	</section>
 
 	<section class="contact-form">
 		<h3>Contact Me</h3>
-		<form>
-			<label>Name: <input type="text" ></label><br>
-			<label>Email: <input type="text" ></label><br>
-			<label>Message: <input type="text" ></label><br>
-			<input type="submit">
+		<form >
+			<div class="form-group">
+			<label for="name">Name</label>
+			<input type="text" id="name">
+		</div>
+
+		<div class="form-group">
+			<label for="email">Email</label>
+			<input type="email" id="email">
+		</div>
+
+		<div class="form-group">
+			<label for="message">Message</label>
+			<textarea id="message" name="message" rows="4" required></textarea>
+		</div>
+
+		<button type="button" onclick="alert('Form submitted')">Send</button>
 		</form>
 	</section>
+
+	<footer>
+    <div class="footer-content">
+        <span class="email">pritijaghising19@gmail.com</span>
+        <div class="social-links">
+            <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+             <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+
+
 
 </body>
 </html>
